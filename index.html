@@ -1,0 +1,36 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>MKAD</title>
+  <style>
+	.container { text-align: center; font-family: sans-serif; max-width: 768px; margin: 0 auto; }
+	#map { min-height: 300px; }
+	input { padding: 1rem; margin: 1rem; }
+  </style>
+
+</head>
+<body>
+
+	<div class="container">
+	
+		<label for="startPlace">Откуда:</label>
+		<input id="startPlace" name="startPlace" placeholder="Адрес или название..." >
+
+		<label for="endPlace">Куда:</label>
+		<input type="text" id="endPlace" name="endPlace" placeholder="Адрес или название..." >
+
+		<input type="button" id="calc" value="Рассчитать">
+
+		<div id="out"></div>
+		<div id="map"></div>
+		
+	</div>
+
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&libraries=geometry,places&language=ru-RU"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
